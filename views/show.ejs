@@ -1,0 +1,16 @@
+<% layout('layout/boilerplate') %>
+<main class='main'>
+    <%for(let movie of moviefetch){ %>
+        <% if(movie.id==id){%>
+            <div class="movie" href = "/movies/">
+                <img src="https://image.tmdb.org/t/p/w1280/<%=(movie.backdrop_path)?movie.backdrop_path:movie.poster_path%>" alt="<%=movie.title%> Poster">
+                <div class="movie-info">
+                    <h2><%=movie.original_title%></h2>
+                    <span>rating : <%=movie.vote_average%></span>
+                    <p>language : <%=movie.original_language%> </p>
+                    <p>Discription : <%=movie.overview%></p>
+                </div>
+            </div>
+        <%}%> 
+    <% }%>
+</main>

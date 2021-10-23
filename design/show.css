@@ -1,0 +1,42 @@
+
+.main {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.movie {
+    background-color: rgb(55, 59, 105);
+    width: 800px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie img {
+    max-width: 100%;
+}
+
+.movie-info {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1rem 1rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.movie-info span {
+    background-color: rgb(31, 36, 75);
+    border-radius: 3px;
+    padding: 0.25rem;
+}
+
+.error h1{
+    font-family: inherit;
+    font-size: 5rem;
+}

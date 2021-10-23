@@ -1,0 +1,19 @@
+<% layout('layout/boilerplate') %>
+<main class="mains">
+        <% Data.forEach(movie => { %>
+            <% if(movie.poster_path){%>
+                <div class="movies" href = "/movies/">
+                    <img src="https://image.tmdb.org/t/p/w1280/<%=movie.poster_path%>" alt="<%=movie.title%> Poster">
+                    <div class="movies-info">
+                        <h3><%=movie.title%></h3>
+                        <span><%=movie.vote_average%></span>
+                    </div>
+                    <div class="btn">
+                        <a href="/movies/<%=movie.id%>">view more</a>
+                    </div>
+                </div>
+            <%}%> 
+        <% }) %>
+    </main>
+</body>
+</html>

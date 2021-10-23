@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+}
+
+body {
+    background-color: rgb(31, 36, 75);
+    margin: 0px;
+    font-family:"Poppins",sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mains {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movies {
+    background-color: rgb(55, 59, 105);
+    width: 300px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movies img {
+    max-width: 100%;
+}
+
+.movies-info {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    font-family: inherit;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.movies-info span {
+    background-color: rgb(31, 36, 75);
+    border-radius: 3px;
+    padding: 0.25rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(55, 59, 105);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+header input{
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: aliceblue;
+    font-size: 1rem;
+    padding:0.5rem;
+}
+
+header input::placeholder{
+    color: violet;
+}
+
+.search:focus{
+    background-color: #22254b;
+    outline:none;
+}
+
+header h1{
+    margin: 0;
+}
+
+header h1 a{
+    color: antiquewhite;
+    text-decoration-line: none;
+}
+
+.btn{
+    background-color:antiquewhite;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer{
+    margin-top : auto;
+    background-color: rgb(55, 59, 105);
+    color:aliceblue;
+    padding : 2rem; 
+}
+
+.btn a{
+    color: black;
+    text-decoration-line: none ;
+}
+
+.error{
+    color: rgba(247, 247, 247, 0.2);
+    font-size: 5rem;
+    text-align: center;
+    margin-top: auto;
+}
+
